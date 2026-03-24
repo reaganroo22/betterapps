@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BetterApps LLC</title>
     <meta name="description" content="Building apps that contribute to humankind and add value through ethical business practices.">
-    
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,6 +47,89 @@
             margin: 0 auto;
         }
 
+        .thesis-box {
+            background: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 32px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .thesis-box h2 {
+            margin: 0 0 8px 0;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .thesis-box p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .thesis-form {
+            display: flex;
+            gap: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .thesis-form input {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 12px 14px;
+            font-size: 14px;
+            font-family: inherit;
+            outline: none;
+        }
+
+        .thesis-form input:focus {
+            border-color: #333;
+        }
+
+        .thesis-form button {
+            background: #1a1a1a;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .thesis-form button:hover {
+            background: #333;
+        }
+
+        .thesis-note {
+            font-size: 12px;
+            color: #999;
+            margin-top: 12px;
+            margin-bottom: 0;
+        }
+
+        .thesis-success {
+            padding: 20px;
+        }
+
+        .thesis-success h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .thesis-success p {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+        }
+
         .footer {
             text-align: center;
             margin-top: 80px;
@@ -55,17 +138,25 @@
             color: #666;
         }
 
+        .footer a {
+            color: #666;
+        }
+
         @media (max-width: 600px) {
             body {
                 padding: 20px;
             }
-            
+
             h1 {
                 font-size: 28px;
             }
-            
+
             h2 {
                 font-size: 22px;
+            }
+
+            .thesis-form {
+                flex-direction: column;
             }
         }
     </style>
@@ -77,6 +168,17 @@
     </div>
 
     <div class="content">
+
+        <div class="thesis-box" id="thesis">
+            <h2>Reagan's "Pragmatic" AI Thesis</h2>
+            <p>How a Georgetown student shipped 8 production apps using AI — the frameworks, the tools, the mindset.</p>
+            <form class="thesis-form" id="thesis-form">
+                <input type="email" id="thesis-email" required placeholder="Your email">
+                <button type="submit">Get the thesis</button>
+            </form>
+            <p class="thesis-note">Free. No spam.</p>
+        </div>
+
         <h2>What We Do</h2>
         <p>We build applications that add genuine value to people's lives. Our focus is on creating software that solves real problems and contributes positively to society.</p>
 
@@ -94,8 +196,19 @@
     </div>
 
     <div class="footer">
-        <p>&copy; 2025 BetterApps LLC. Building better technology for everyone.</p>
+        <p>&copy; 2026 BetterApps LLC. Building better technology for everyone.</p>
         <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
     </div>
+
+    <script>
+    document.getElementById('thesis-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        var email = document.getElementById('thesis-email').value;
+        var box = document.getElementById('thesis');
+
+        box.innerHTML = '<div class="thesis-success"><h3>Opening the thesis...</h3><p>If it doesn\'t open automatically, <a href="https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/" target="_blank" style="color:#333;text-decoration:underline">click here</a>.</p></div>';
+        window.open('https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/', '_blank');
+    });
+    </script>
 </body>
 </html>
