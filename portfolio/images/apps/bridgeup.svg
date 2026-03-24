@@ -1,0 +1,32 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="46" fill="#e8f4fc" stroke="#607d8b" stroke-width="4"/>
+
+  <!-- Bridge/book base curve -->
+  <path d="M18 72 Q35 62 50 67 Q65 62 82 72" fill="none" stroke="#90a4ae" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Left arrow -->
+  <path d="M28 70 L28 52" fill="none" stroke="#78909c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M23 57 L28 52 L33 57" fill="none" stroke="#78909c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Center arrow (taller) -->
+  <path d="M50 67 L50 42" fill="none" stroke="#546e7a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M43 49 L50 42 L57 49" fill="none" stroke="#546e7a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right arrow -->
+  <path d="M72 70 L72 52" fill="none" stroke="#78909c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M67 57 L72 52 L77 57" fill="none" stroke="#78909c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Graduation cap top -->
+  <polygon points="50,18 28,30 50,42 72,30" fill="#455a64"/>
+
+  <!-- Cap button -->
+  <rect x="47" y="30" width="6" height="5" fill="#37474f"/>
+
+  <!-- Tassel string -->
+  <line x1="72" y1="30" x2="78" y2="38" stroke="#455a64" stroke-width="2" stroke-linecap="round"/>
+  <line x1="78" y1="38" x2="78" y2="48" stroke="#455a64" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Tassel end -->
+  <rect x="75" y="48" width="6" height="4" rx="1" fill="#455a64"/>
+</svg>

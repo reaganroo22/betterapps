@@ -4,211 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BetterApps LLC</title>
-    <meta name="description" content="Building apps that contribute to humankind and add value through ethical business practices.">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-            color: #333;
-            background: #fff;
-        }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            font-weight: normal;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 40px 0 20px 0;
-            font-weight: normal;
-        }
-
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .thesis-box {
-            background: #f9f9f9;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 32px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .thesis-box h2 {
-            margin: 0 0 8px 0;
-            font-size: 20px;
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-
-        .thesis-box p {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .thesis-form {
-            display: flex;
-            gap: 8px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .thesis-form input {
-            flex: 1;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 12px 14px;
-            font-size: 14px;
-            font-family: inherit;
-            outline: none;
-        }
-
-        .thesis-form input:focus {
-            border-color: #333;
-        }
-
-        .thesis-form button {
-            background: #1a1a1a;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 12px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            font-family: inherit;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .thesis-form button:hover {
-            background: #333;
-        }
-
-        .thesis-note {
-            font-size: 12px;
-            color: #999;
-            margin-top: 12px;
-            margin-bottom: 0;
-        }
-
-        .thesis-success {
-            padding: 20px;
-        }
-
-        .thesis-success h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .thesis-success p {
-            font-size: 14px;
-            color: #666;
-            margin: 0;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #eee;
-            color: #666;
-        }
-
-        .footer a {
-            color: #666;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            h2 {
-                font-size: 22px;
-            }
-
-            .thesis-form {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>BetterApps LLC</h1>
-        <p>Building apps that contribute to humankind</p>
-    </div>
-
-    <div class="content">
-
-        <div class="thesis-box" id="thesis">
-            <h2>Reagan's "Pragmatic" AI Thesis</h2>
-            <p>How a Georgetown student shipped 8 production apps using AI — the frameworks, the tools, the mindset.</p>
-            <form class="thesis-form" id="thesis-form">
-                <input type="email" id="thesis-email" required placeholder="Your email">
-                <button type="submit">Get the thesis</button>
-            </form>
-            <p class="thesis-note">Free. No spam.</p>
-        </div>
-
-        <h2>What We Do</h2>
-        <p>We build applications that add genuine value to people's lives. Our focus is on creating software that solves real problems and contributes positively to society.</p>
-
-        <h2>Our Approach</h2>
-        <p>We believe in ethical business practices. Every app we develop is designed with the user's best interests in mind, not just profit margins. We work across consumer and business markets, finding opportunities where technology can make a meaningful difference.</p>
-
-        <h2>Our Mission</h2>
-        <p>To create digital products that improve how people work, learn, and live. We're committed to building technology that serves humanity rather than exploiting it.</p>
-
-        <h2>Values</h2>
-        <p>We prioritize long-term value over short-term gains. Our apps are built to last, with sustainable business models that benefit all stakeholders - users, partners, and society as a whole.</p>
-
-        <h2>Contact</h2>
-        <p>For business inquiries or partnerships, reach out to us at admin@betterappshq.com</p>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2026 BetterApps LLC. Building better technology for everyone.</p>
-        <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
-    </div>
-
+    <meta name="description" content="Software studio shipping production apps across consumer, enterprise, and social-impact verticals.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-    document.getElementById('thesis-form').addEventListener('submit', async function(e) {
-        e.preventDefault();
-        var email = document.getElementById('thesis-email').value;
-        var box = document.getElementById('thesis');
-
-        box.innerHTML = '<div class="thesis-success"><h3>Opening the thesis...</h3><p>If it doesn\'t open automatically, <a href="https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/" target="_blank" style="color:#333;text-decoration:underline">click here</a>.</p></div>';
-        window.open('https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/', '_blank');
-    });
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        }
+      }
+    }
     </script>
+</head>
+<body class="bg-white text-neutral-900 font-sans antialiased">
+
+    <!-- Nav -->
+    <nav class="border-b border-neutral-100">
+        <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+            <span class="text-sm font-semibold tracking-tight">BetterApps LLC</span>
+            <div class="flex items-center gap-6 text-sm text-neutral-400">
+                <a href="#apps" class="hover:text-neutral-900 transition">Apps</a>
+                <a href="thesis.html" class="hover:text-neutral-900 transition">AI Thesis</a>
+                <a href="portfolio/" class="hover:text-neutral-900 transition">Portfolio</a>
+                <a href="https://linkedin.com/in/reaganstock" target="_blank" class="hover:text-neutral-900 transition">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6">
+
+        <!-- Hero -->
+        <section class="py-20 md:py-28">
+            <h1 class="text-3xl md:text-4xl font-bold tracking-tight leading-tight mb-4">Building apps that contribute to humankind.</h1>
+            <p class="text-neutral-500 text-lg leading-relaxed max-w-xl">Software studio shipping production apps across consumer, enterprise, and social-impact verticals. Founded by Reagan Stock at Georgetown University.</p>
+        </section>
+
+        <!-- Lead Magnet -->
+        <section class="border border-neutral-200 rounded-2xl p-8 md:p-10 mb-20 bg-neutral-50">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+                <div>
+                    <h2 class="text-lg font-semibold mb-1">Reagan's "Pragmatic" AI Thesis</h2>
+                    <p class="text-neutral-500 text-sm">How a Georgetown student shipped 8 production apps using AI — the frameworks, tools, and mindset.</p>
+                </div>
+                <a href="thesis.html" class="bg-neutral-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-neutral-700 transition whitespace-nowrap text-center">Get it free →</a>
+            </div>
+        </section>
+
+        <!-- Apps -->
+        <section id="apps" class="pb-20">
+            <h2 class="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-8">The Apps</h2>
+            <div class="space-y-6">
+                <a href="https://wizzmo.app" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">Wizzmo</h3>
+                        <span class="text-sm text-neutral-400">wizzmo.app</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">College matchmaking & mentorship. 400+ signups at Georgetown.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://bridgeup.co" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">BridgeUp</h3>
+                        <span class="text-sm text-neutral-400">bridgeup.co</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">College guidance from verified student mentors.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://wasteroute.app" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">WasteRoute</h3>
+                        <span class="text-sm text-neutral-400">wasteroute.app</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">B2B route optimization for waste haulers.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://debatetv.app" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">DebateTV</h3>
+                        <span class="text-sm text-neutral-400">debatetv.app</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">Real-time video debates with AI scoring.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://fitformai.com" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">FitFormAI</h3>
+                        <span class="text-sm text-neutral-400">fitformai.com</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">AI fitness coaching & video form analysis.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://detach.app" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">Detach</h3>
+                        <span class="text-sm text-neutral-400">detach.app</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">Digital wellness & offline content from 7 platforms.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://lifely.dev" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">Lifely</h3>
+                        <span class="text-sm text-neutral-400">lifely.dev</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">Life management, todos, goals & AI calendar.</p>
+                </a>
+                <div class="border-t border-neutral-100"></div>
+
+                <a href="https://readingstinks.com" target="_blank" class="block group">
+                    <div class="flex items-baseline justify-between">
+                        <h3 class="text-lg font-semibold group-hover:underline">ReadingStinks</h3>
+                        <span class="text-sm text-neutral-400">readingstinks.com</span>
+                    </div>
+                    <p class="text-neutral-500 text-sm mt-1">PDF to audiobook. On the App Store.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Interactive Portfolio Link -->
+        <section class="pb-20">
+            <a href="portfolio/" class="block border border-neutral-200 rounded-2xl p-8 hover:border-neutral-400 transition group">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="text-lg font-semibold mb-1 group-hover:underline">Interactive Portfolio →</h2>
+                        <p class="text-neutral-500 text-sm">Explore every app in a macOS-style desktop environment.</p>
+                    </div>
+                    <span class="text-3xl">💻</span>
+                </div>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section class="pb-20 border-t border-neutral-100 pt-16">
+            <h2 class="text-xs font-semibold text-neutral-400 uppercase tracking-widest mb-6">About</h2>
+            <div class="text-neutral-500 space-y-4 leading-relaxed">
+                <p>I dropped out of high school my junior year to start a marketing agency. Fielded hundreds of cold calls, built lead-gen systems with Python, and closed $20K+ in revenue consulting for companies like Skool.com. I was 17.</p>
+                <p>Now I'm at Georgetown studying finance and management — and running Better Apps, LLC on the side. Every product in the portfolio went from idea to production with paying users or active pilots.</p>
+            </div>
+            <div class="mt-6 flex gap-4 text-sm">
+                <a href="https://linkedin.com/in/reaganstock" target="_blank" class="text-neutral-900 font-medium hover:underline">LinkedIn</a>
+                <a href="mailto:reagan@betterappsllchq.com" class="text-neutral-400 hover:text-neutral-900 transition">reagan@betterappsllchq.com</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-neutral-100 py-8 text-center text-sm text-neutral-400">
+        <p>© 2026 BetterApps LLC</p>
+        <p class="mt-1"><a href="privacy.html" class="hover:text-neutral-900 transition">Privacy</a> · <a href="terms.html" class="hover:text-neutral-900 transition">Terms</a></p>
+    </footer>
+
 </body>
 </html>

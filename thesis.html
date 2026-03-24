@@ -4,202 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reagan's "Pragmatic" AI Thesis — BetterApps LLC</title>
-    <meta name="description" content="How a Georgetown student shipped 8 production apps using AI — the frameworks, the tools, the mindset.">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 800px;
-            margin: 0 auto;
-            color: #333;
-            background: #fff;
+    <meta name="description" content="How a Georgetown student shipped 8 production apps using AI — the frameworks, tools, and mindset.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
         }
-
-        h1 {
-            font-size: 32px;
-            margin-bottom: 12px;
-            font-weight: normal;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin: 40px 0 20px 0;
-            font-weight: normal;
-        }
-
-        p {
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid #eee;
-        }
-
-        .header p {
-            color: #666;
-            font-size: 18px;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .content {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .thesis-box {
-            background: #f9f9f9;
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 40px 32px;
-            text-align: center;
-        }
-
-        .thesis-box h2 {
-            margin: 0 0 8px 0;
-            font-size: 20px;
-            font-weight: 600;
-            color: #1a1a1a;
-        }
-
-        .thesis-box p {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .thesis-form {
-            display: flex;
-            gap: 8px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .thesis-form input {
-            flex: 1;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            padding: 12px 14px;
-            font-size: 14px;
-            font-family: inherit;
-            outline: none;
-        }
-
-        .thesis-form input:focus {
-            border-color: #333;
-        }
-
-        .thesis-form button {
-            background: #1a1a1a;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 12px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            font-family: inherit;
-            cursor: pointer;
-            white-space: nowrap;
-        }
-
-        .thesis-form button:hover {
-            background: #333;
-        }
-
-        .thesis-note {
-            font-size: 12px;
-            color: #999;
-            margin-top: 12px;
-            margin-bottom: 0;
-        }
-
-        .thesis-success {
-            padding: 20px;
-        }
-
-        .thesis-success h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .thesis-success p {
-            font-size: 14px;
-            color: #666;
-            margin: 0;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid #eee;
-            color: #666;
-        }
-
-        .footer a {
-            color: #666;
-        }
-
-        .footer p {
-            font-size: 14px;
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .header p {
-                font-size: 16px;
-            }
-
-            .thesis-form {
-                flex-direction: column;
-            }
-        }
-    </style>
+      }
+    }
+    </script>
 </head>
-<body>
-    <div class="header">
-        <h1>Reagan's "Pragmatic" AI Thesis</h1>
-        <p>How a Georgetown student shipped 8 production apps using AI — the frameworks, the tools, the mindset.</p>
-    </div>
+<body class="bg-white text-neutral-900 font-sans antialiased min-h-screen flex flex-col">
 
-    <div class="content">
-        <div class="thesis-box" id="thesis">
-            <h2>Get the thesis</h2>
-            <p>Enter your email below and we'll open it right up.</p>
-            <form class="thesis-form" id="thesis-form">
-                <input type="email" id="thesis-email" required placeholder="Your email">
-                <button type="submit">Get the thesis</button>
-            </form>
-            <p class="thesis-note">Free. No spam.</p>
+    <!-- Nav -->
+    <nav class="border-b border-neutral-100">
+        <div class="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="/" class="text-sm font-semibold tracking-tight hover:opacity-70 transition">BetterApps LLC</a>
+            <a href="https://linkedin.com/in/reaganstock" target="_blank" class="text-sm text-neutral-400 hover:text-neutral-900 transition">LinkedIn</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="footer">
-        <p><a href="https://betterappshq.com">betterappshq.com</a> &middot; <a href="https://linkedin.com/in/reaganstock" target="_blank">LinkedIn</a></p>
-        <p>&copy; 2026 BetterApps LLC</p>
-    </div>
+    <main class="flex-1 flex items-center justify-center px-6 py-20">
+        <div class="max-w-md w-full text-center">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-tight mb-3">Reagan's "Pragmatic" AI Thesis</h1>
+            <p class="text-neutral-500 mb-10 leading-relaxed">How a Georgetown student shipped 8 production apps using AI — the frameworks, the tools, the mindset.</p>
+
+            <div id="form-container">
+                <form id="thesis-form" class="flex gap-2 mb-3">
+                    <input type="email" id="email" required placeholder="Your email" class="flex-1 border border-neutral-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-neutral-900 transition placeholder-neutral-400">
+                    <button type="submit" class="bg-neutral-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-neutral-700 transition whitespace-nowrap">Get the thesis</button>
+                </form>
+                <p class="text-xs text-neutral-400">Free. No spam.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-neutral-100 py-6 text-center text-sm text-neutral-400">
+        <a href="/" class="hover:text-neutral-900 transition">betterappshq.com</a> · <a href="https://linkedin.com/in/reaganstock" target="_blank" class="hover:text-neutral-900 transition">LinkedIn</a>
+    </footer>
 
     <script>
     document.getElementById('thesis-form').addEventListener('submit', function(e) {
         e.preventDefault();
-        var box = document.getElementById('thesis');
-
-        box.innerHTML = '<div class="thesis-success"><h3>Opening the thesis...</h3><p>If it doesn\'t open automatically, <a href="https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/" target="_blank" style="color:#333;text-decoration:underline">click here</a>.</p></div>';
+        var email = document.getElementById('email').value;
+        document.getElementById('form-container').innerHTML = '<div class="bg-neutral-50 border border-neutral-200 rounded-xl p-6"><p class="font-semibold mb-1">Opening the thesis...</p><p class="text-sm text-neutral-500">If it doesn\'t open, <a href="https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/" target="_blank" class="underline">click here</a>.</p></div>';
         window.open('https://docs.google.com/document/d/1hUBzmWBJrwSmMBw0OTtJCEMy305jEeweEExjvJoele4/', '_blank');
     });
     </script>

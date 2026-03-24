@@ -1,0 +1,10 @@
+Add your resume PDF here as "resume.pdf"
+
+The Resume window in the portfolio will display your PDF resume with a download button.
+
+To add your resume:
+1. Save your resume as resume.pdf
+2. Place it in /public/files/resume.pdf
+3. The portfolio will automatically display it
+
+If you don't have a resume PDF yet, you can remove the Resume icon from the dock in src/constants/index.js
