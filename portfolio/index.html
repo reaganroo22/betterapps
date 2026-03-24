@@ -1,15 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/portfolio/images/macbook.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="BetterApps Portfolio - 9 Production-Ready Applications" />
-    <title>BetterApps Portfolio</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-KL8cZgqZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BgmfnJ4v.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — BetterApps LLC</title>
+    <meta name="description" content="8 production apps across consumer, enterprise, and social-impact verticals.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } }
+    }
+    </script>
+</head>
+<body class="bg-white text-neutral-900 font-sans antialiased">
+
+    <nav class="border-b border-neutral-100 sticky top-0 bg-white/90 backdrop-blur-sm z-50">
+        <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+            <a href="/" class="text-sm font-semibold tracking-tight hover:opacity-70 transition">BetterApps LLC</a>
+            <div class="flex items-center gap-6 text-sm text-neutral-400">
+                <a href="/thesis.html" class="hover:text-neutral-900 transition">AI Thesis</a>
+                <a href="https://linkedin.com/in/reaganstock" target="_blank" class="hover:text-neutral-900 transition">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-4">The Portfolio</h1>
+        <p class="text-neutral-500 text-lg max-w-xl leading-relaxed">8 apps. All shipped. All in production. Every product went from zero to real users.</p>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="grid"></div>
+    </section>
+
+    <section class="border-t border-neutral-100 py-16">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+                <h2 class="text-xl font-bold mb-1">Want to know how these were built?</h2>
+                <p class="text-neutral-500 text-sm">Read the thesis on shipping 8 apps in 12 months with AI.</p>
+            </div>
+            <a href="/thesis.html" class="bg-neutral-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:bg-neutral-700 transition whitespace-nowrap text-center">Get the AI Thesis →</a>
+        </div>
+    </section>
+
+    <footer class="border-t border-neutral-100 py-8 text-center text-sm text-neutral-400">
+        © 2026 BetterApps LLC · <a href="/" class="hover:text-neutral-900 transition">Home</a> · <a href="https://linkedin.com/in/reaganstock" target="_blank" class="hover:text-neutral-900 transition">LinkedIn</a>
+    </footer>
+
+    <script>
+    const apps = [
+        {
+            name: 'Wizzmo', url: 'https://wizzmo.app',
+            tagline: 'College matchmaking & mentorship',
+            desc: 'Q&A platform where guys anonymously get dating and life advice from verified college women mentors. 400+ signups and 95% engagement at Georgetown launch. $9.99/month subscription.',
+            tags: ['Next.js 15', 'React 19', 'Supabase', 'Stripe'],
+            stat: '400+ signups', icon: 'images/apps/wizzmo.png'
+        },
+        {
+            name: 'BridgeUp', url: 'https://bridgeup.co',
+            tagline: 'College guidance platform',
+            desc: 'Connecting students with verified current student mentors for personalized advice on applications, campus life, career guidance, and financial aid.',
+            tags: ['Next.js', 'React', 'Supabase', 'Tailwind CSS'],
+            stat: 'Multi-campus', icon: 'images/apps/bridgeup.svg'
+        },
+        {
+            name: 'WasteRoute', url: 'https://wasteroute.app',
+            tagline: 'B2B route optimization for waste haulers',
+            desc: 'Route optimization SaaS with geofenced driver notifications, team management dashboards, real-time GPS tracking, and offline route continuation.',
+            tags: ['React Native', 'Expo', 'Maps', 'Geofencing'],
+            stat: 'B2B SaaS', icon: 'images/apps/wasteroute.png'
+        },
+        {
+            name: 'DebateTV', url: 'https://debatetv.app',
+            tagline: 'Real-time video debates with AI scoring',
+            desc: 'Live video debate platform integrating LiveKit for low-latency streaming with AI-powered scoring algorithms and broadcast-quality production interface.',
+            tags: ['React Native', 'LiveKit', 'AI', 'Supabase'],
+            stat: 'Live streaming', icon: 'images/apps/debatetv.png'
+        },
+        {
+            name: 'FitFormAI', url: 'https://fitformai.com',
+            tagline: 'AI fitness coaching & form analysis',
+            desc: 'Professional fitness app with AI workout generation, video form analysis using Google Gemini Vision, and 15,000+ AI-generated exercises. 9 Supabase Edge Functions.',
+            tags: ['React Native', 'Expo', 'Gemini', 'RevenueCat'],
+            stat: '15K+ exercises', icon: 'images/apps/fitformai.png'
+        },
+        {
+            name: 'Detach', url: 'https://detach.app',
+            tagline: 'Digital wellness & offline content',
+            desc: 'Intentional consumption app for downloading content from 7 platforms — YouTube, Instagram, TikTok, Facebook, Twitter, LinkedIn, Pinterest — for offline viewing.',
+            tags: ['React Native', 'Expo', 'Node.js', 'yt-dlp'],
+            stat: '7 platforms', icon: 'images/apps/detach.png'
+        },
+        {
+            name: 'Lifely', url: 'https://lifely.dev',
+            tagline: 'Life management & productivity',
+            desc: 'Comprehensive life organization with todos, events, notes, goals, and routines. AI calendar integration with Google Gemini and OpenAI. 100+ AppSumo redemption codes.',
+            tags: ['React', 'Tailwind CSS', 'Supabase', 'Gemini'],
+            stat: 'AppSumo launch', icon: 'images/apps/lifely.svg'
+        },
+        {
+            name: 'ReadingStinks', url: 'https://readingstinks.com',
+            tagline: 'PDF to audiobook converter',
+            desc: 'Transform any PDF into an intelligent audiobook with AI-powered summaries and high-quality TTS. Multi-provider AI system optimized from $2-4 to $0.20 per PDF. Available on the App Store.',
+            tags: ['React', 'Node.js', 'Gemini', 'Deepgram'],
+            stat: 'App Store', icon: 'images/apps/readingstinks.png'
+        }
+    ];
+
+    const grid = document.getElementById('grid');
+    apps.forEach(app => {
+        const el = document.createElement('a');
+        el.href = app.url;
+        el.target = '_blank';
+        el.rel = 'noopener';
+        el.className = 'group block border border-neutral-200 rounded-2xl p-6 hover:border-neutral-400 hover:shadow-lg transition-all duration-200';
+        el.innerHTML = `
+            <div class="flex items-start gap-4 mb-4">
+                <img src="${app.icon}" alt="${app.name}" class="w-14 h-14 rounded-xl object-cover flex-shrink-0 bg-neutral-100" onerror="this.style.display='none'">
+                <div class="flex-1 min-w-0">
+                    <div class="flex items-center gap-2 mb-0.5">
+                        <h3 class="text-lg font-bold group-hover:underline">${app.name}</h3>
+                        <span class="text-xs font-medium text-neutral-400 bg-neutral-100 px-2 py-0.5 rounded-full">${app.stat}</span>
+                    </div>
+                    <p class="text-sm text-neutral-500">${app.tagline}</p>
+                </div>
+                <span class="text-neutral-300 group-hover:text-neutral-500 transition text-lg flex-shrink-0">↗</span>
+            </div>
+            <p class="text-sm text-neutral-500 leading-relaxed mb-4">${app.desc}</p>
+            <div class="flex items-center justify-between">
+                <div class="flex gap-1.5 flex-wrap">
+                    ${app.tags.map(t => `<span class="text-xs text-neutral-400 border border-neutral-100 px-2 py-0.5 rounded">${t}</span>`).join('')}
+                </div>
+                <span class="text-xs font-medium">${app.url.replace('https://','')}</span>
+            </div>`;
+        grid.appendChild(el);
+    });
+    </script>
+</body>
 </html>
